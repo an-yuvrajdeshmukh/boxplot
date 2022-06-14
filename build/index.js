@@ -428,7 +428,6 @@ class BoxAndWiskers extends StatsBase$1 {
         }
         ctx.beginPath();
         ctx.moveTo(x0, props.median);
-        ctx.lineTo(x0 + width, props.median);
         ctx.closePath();
         ctx.stroke();
         ctx.restore();
@@ -453,11 +452,9 @@ class BoxAndWiskers extends StatsBase$1 {
         }
         ctx.beginPath();
         ctx.moveTo(x0, props.whiskerMin);
-        ctx.lineTo(x0 + width, props.whiskerMin);
         ctx.moveTo(x, props.whiskerMin);
         ctx.lineTo(x, props.q1);
         ctx.moveTo(x0, props.whiskerMax);
-        ctx.lineTo(x0 + width, props.whiskerMax);
         ctx.moveTo(x, props.whiskerMax);
         ctx.lineTo(x, props.q3);
         ctx.closePath();
