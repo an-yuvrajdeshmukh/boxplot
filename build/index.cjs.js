@@ -107,7 +107,7 @@ function determineStatsOptions(options) {
     };
 }
 function boxplotStats(arr, options) {
-    const r = boxplots__default['default'](arr, determineStatsOptions(options));
+    const r = boxplots__default["default"](arr, determineStatsOptions(options));
     return {
         items: Array.from(r.items),
         outliers: r.outlier,
@@ -703,7 +703,7 @@ function outlierPositioner(items, eventPosition) {
 }
 outlierPositioner.id = 'averageInstance';
 outlierPositioner.register = () => {
-    chart_js.Tooltip.positioners.averageInstance = outlierPositioner;
+    chart_js.Tooltip.positioners.average = outlierPositioner;
     return outlierPositioner;
 };
 

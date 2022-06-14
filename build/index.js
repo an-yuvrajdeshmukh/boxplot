@@ -695,7 +695,7 @@ function outlierPositioner(items, eventPosition) {
 }
 outlierPositioner.id = 'averageInstance';
 outlierPositioner.register = () => {
-    Tooltip.positioners.averageInstance = outlierPositioner;
+    Tooltip.positioners.average = outlierPositioner;
     return outlierPositioner;
 };
 
